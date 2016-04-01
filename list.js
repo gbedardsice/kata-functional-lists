@@ -50,11 +50,7 @@ class ListNode extends List {
 	}
 
 	head() {
-		if (this.next instanceof EmptyList) {
-			return this.value;
-		}
-
-		return this.next.head();
+		return this.value;
 	}
 
 	tail() {
